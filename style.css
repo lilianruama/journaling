@@ -103,3 +103,35 @@ footer {
     padding: 20px 0;
     margin-top: auto;
 }
+
+article {
+  position: relative; /* necessário para posicionamento absoluto do botão */
+}
+
+.button-34 {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+
+  background: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 6px 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-34:hover {
+  background: #f0f0f0;
+}
+
+.button-34:active {
+  transform: scale(0.97);
+}

@@ -1,0 +1,103 @@
+:root {
+    --text-color: #000000;
+    --background-color: #ffffff;
+}
+
+/* Estilo para todos os artigos */
+article {
+    width: 800px;
+    height: 150px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ece6ff 0%, #c9e8ec 100%);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 10px 0;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+/* Removendo borda e sombra antigas para evitar conflito */
+article {
+    border: none;
+    box-shadow: none;
+}
+
+/* Mantendo estilo das legendas dentro do artigo */
+article header p {
+    margin: 0;
+    padding: 0;
+}
+
+article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Alinhamento do título */
+article h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Alinhamento e deslocamento do parágrafo */
+article p {
+    margin: 0 0 0 36px; /* margem esquerda para deslocar */
+    padding: 0;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #000000;
+        --background-color: #000000;
+    }
+
+    article {
+        background-color: #1a1a1a;
+        color: var(--text-color);
+        border: none;
+        box-shadow: none;
+    }
+
+    article header p {
+        color: var(--text-color);
+    }
+}
+
+time {
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
